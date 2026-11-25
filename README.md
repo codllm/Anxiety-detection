@@ -28,6 +28,36 @@ python3 src/train.py \
   --output-dir artifacts/model-three
 ```
 
+## Run the Streamlit frontend
+
+Install the frontend dependency if needed and start the two-panel interface:
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+The frontend evaluates a labeled CSV and shows accuracy, balanced accuracy, precision, recall, F1, confusion matrix, and row-level correctness.
+
+## Run the React frontend
+
+Start the local model API in one terminal:
+
+```bash
+pip install -r requirements.txt
+uvicorn api:app --reload --port 8000
+```
+
+Start the React app in a second terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open the URL printed by Vite, normally `http://localhost:5173`. The React interface has a labeled-data evaluation panel and downloads the prediction results CSV.
+
 Run a saved model on a new feature row:
 
 ```bash
