@@ -380,6 +380,7 @@ def build():
     doc.add_paragraph("Run the React frontend with the Python API:")
     doc.add_paragraph("python -m uvicorn api:app --reload --port 8000\n\ncd frontend\nnpm run dev")
 
+    doc.add_page_break()
     add_heading(doc, "References", 1)
     add_bullet(doc, "Project datasets supplied for this work: ECG/HRV feature CSV files and labeled evaluation CSV.")
     add_bullet(doc, "Scikit-learn User Guide: https://scikit-learn.org/stable/")
