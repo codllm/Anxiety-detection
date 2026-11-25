@@ -1,0 +1,33 @@
+{
+  "target": "anxiety_level",
+  "group_column": "subject_id",
+  "feature_columns": [
+    "age",
+    "mean_hr_bpm",
+    "mean_rr_ms",
+    "sdnn_ms",
+    "rmssd_ms",
+    "pnn50_pct",
+    "hr_std_bpm",
+    "lf_power_ms2",
+    "hf_power_ms2",
+    "lf_hf_ratio",
+    "lf_nu",
+    "hf_nu",
+    "total_power_ms2",
+    "sd1_ms",
+    "sd2_ms",
+    "sd1_sd2_ratio",
+    "sample_entropy",
+    "ecg_resp_rate_bpm",
+    "r_peak_amp_mv",
+    "qrs_duration_ms",
+    "signal_quality_index"
+  ],
+  "labels": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "selected_model": "logistic_regression"
+}

@@ -1,0 +1,45 @@
+{
+  "target": "anxiety_level",
+  "group_column": "subject_id",
+  "feature_columns": [
+    "age",
+    "mean_hr_bpm",
+    "mean_rr_ms",
+    "sdnn_ms",
+    "rmssd_ms",
+    "pnn50_pct",
+    "hr_std_bpm",
+    "lf_power_ms2",
+    "hf_power_ms2",
+    "lf_hf_ratio",
+    "lf_nu",
+    "hf_nu",
+    "total_power_ms2",
+    "sd1_ms",
+    "sd2_ms",
+    "sd1_sd2_ratio",
+    "sample_entropy",
+    "ecg_resp_rate_bpm",
+    "r_peak_amp_mv",
+    "qrs_duration_ms",
+    "signal_quality_index"
+  ],
+  "labels": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "selected_model": "logistic_regression",
+  "rows": 29900,
+  "subjects": 299,
+  "train_rows": 23900,
+  "test_rows": 6000,
+  "test_subjects": 60,
+  "test_macro_f1": 0.8840641880275683,
+  "source_files": [
+    "/Users/nishantnikhil/Downloads/ecg_hrv_dataset.csv",
+    "/Users/nishantnikhil/Downloads/ecg_hrv_dataset_2.csv",
+    "/Users/nishantnikhil/Downloads/ecg_hrv_dataset_synthetic_10k.csv"
+  ],
+  "note": "Prototype using engineered ECG/HRV features; not raw ECG and not a clinical diagnosis."
+}
